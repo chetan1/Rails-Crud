@@ -1,5 +1,6 @@
 Hello::Application.routes.draw do
   get "hi/index"
+  root :to => 'hi#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
