@@ -2,7 +2,7 @@ Hello::Application.routes.draw do
   get "hi/index"
   get "hi/new"
   root :to => 'hi#index'
-  root :to => 'hi#new'
+  match '/new' => 'hi#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
