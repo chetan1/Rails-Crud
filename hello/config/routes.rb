@@ -1,6 +1,7 @@
 Hello::Application.routes.draw do
   get "hi/index"
   get "hi/new"
+  post "hi" => "hi#create"
   root :to => 'hi#index'
   match '/new' => 'hi#new'
 
